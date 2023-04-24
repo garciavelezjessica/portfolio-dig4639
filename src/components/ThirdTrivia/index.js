@@ -19,30 +19,30 @@ export default function TriviaThree() {
 
   const geographyQuestions = [
     {
-      prompt: "What is the tallest mountain in the world?",
+      prompt: "Which is the largest internal organ in the human body?",
       choices: [
-        { testId: 0, text: "Mount Everest", correct: true },
-        { testId: 1, text: "K2", correct: false },
-        { testId: 2, text: "Kangchenjunga", correct: false },
-        { testId: 3, text: "Lhotse", correct: false },
+        { testId: 0, text: "Lungs", correct: false },
+        { testId: 1, text: "Liver", correct: true },
+        { testId: 2, text: "Heart", correct: false },
+        { testId: 3, text: "Brain", correct: false },
       ]
     },
     {
-      prompt: "What is the capital of Mexico?",
+      prompt: "How many wings does a mosquito have??",
       choices: [
-        { testId: 0, text: "Guadalajara", correct: false },
-        { testId: 1, text: "Tijuana", correct: false },
-        { testId: 2, text: "Mexico City", correct: true },
-        { testId: 3, text: "Oaxaca", correct: false },
+        { testId: 0, text: "Eight", correct: false },
+        { testId: 1, text: "Four", correct: false },
+        { testId: 2, text: "Two", correct: true },
+        { testId: 3, text: "Six", correct: false },
       ]
     },
     {
-      prompt: "What is the name of the largest ocean in the world?",
+      prompt: "'Zr' is the symbol for which chemical element?",
       choices: [
-        { testId: 0, text: "Arctic", correct: false },
-        { testId: 1, text: "Pacific", correct: true },
-        { testId: 2, text: "Atlantic", correct: true },
-        { testId: 3, text: "Antarctic", correct: false },
+        { testId: 0, text: "Zirconium", correct: true },
+        { testId: 1, text: "Zinc", correct: false },
+        { testId: 2, text: "Tin", correct: false },
+        { testId: 3, text: "Silver", correct: false },
       ]
     }
   ];
