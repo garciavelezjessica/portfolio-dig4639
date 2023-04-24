@@ -6,31 +6,31 @@ https://reactnavigation.org/docs/navigation-prop
 */
 
 import React from "react";
-import { FlatList, StyleSheet } from "react-native";
+import { FlatList, StyleSheet, View, Text } from "react-native";
 import { Button } from "react-native-elements";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import RepetitionExercise from "./src/components/RepetitionExercise";
-import DurationExercise from "./src/components/DurationExercise";
-import WeightsExercise from "./src/components/WeightsExercise";
-import Tasks from "./src/components/Tasks";
+import FirstTrivia from "./src/components/FirstTrivia";
+import SecondTrivia from "./src/components/SecondTrivia";
+import ThirdTrivia from "./src/components/ThirdTrivia";
+import FourthTrivia from "./src/components/FourthTrivia";
 
 const Stack = createStackNavigator();
 
 const screens = [
-  { title: "Duration Exercise", component: DurationExercise },
-  { title: "Repetition Exercise", component: RepetitionExercise },
-  { title: "Weights Exercise", component: WeightsExercise },
-  { title: "Tasks", component: Tasks },
+  { title: "Geography", component: FirstTrivia },
+  { title: "Math", component: SecondTrivia },
+  { title: "Science and Nature", component: ThirdTrivia },
+  { title: "Sports", component: FourthTrivia },
 ];
 
 const Home = () => (
   <Stack.Navigator>
     <Stack.Screen style = {styles.screens} name="Home" component={HomeScreen} />
-    <Stack.Screen style = {styles.screens} name="DurationExercise" component={DurationExercise} />
-    <Stack.Screen style = {styles.screens} name="RepetitionExercise" component={RepetitionExercise} />
-    <Stack.Screen style = {styles.screens} name="WeightsExercise" component={WeightsExercise} />
-    <Stack.Screen style = {styles.screens} name="Tasks" component={Tasks} />
+    <Stack.Screen style = {styles.screens} name="TriviaOne" component={FirstTrivia} />
+    <Stack.Screen style = {styles.screens} name="TriviaTwo" component={SecondTrivia} />
+    <Stack.Screen style = {styles.screens} name="TriviaThree" component={ThirdTrivia} />
+    <Stack.Screen style = {styles.screens} name="TriviaFour" component={FourthTrivia} />
   </Stack.Navigator>
 );
 
@@ -44,11 +44,13 @@ const HomeScreen = ({ navigation }) => {
   );
 
   return (
+    <View>
+      <Text>Pick a category!</Text>
     <FlatList
       data={screens}
       renderItem={renderItem}
       keyExtractor={(item) => item.title}
-    />
+    /></View>
   );
 };
 
