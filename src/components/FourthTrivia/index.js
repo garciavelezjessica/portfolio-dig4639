@@ -19,30 +19,30 @@ export default function TriviaFour() {
 
   const geographyQuestions = [
     {
-      prompt: "What is the tallest mountain in the world?",
+      prompt: "The Olympics are held every how many years?",
       choices: [
-        { testId: 0, text: "Mount Everest", correct: true },
-        { testId: 1, text: "K2", correct: false },
-        { testId: 2, text: "Kangchenjunga", correct: false },
-        { testId: 3, text: "Lhotse", correct: false },
+        { testId: 0, text: "4", correct: true },
+        { testId: 1, text: "5", correct: false },
+        { testId: 2, text: "2", correct: false },
+        { testId: 3, text: "3", correct: false },
       ]
     },
     {
-      prompt: "What is the capital of Mexico?",
+      prompt: "How many medals did China win at the Beijing Olympics?",
       choices: [
-        { testId: 0, text: "Guadalajara", correct: false },
-        { testId: 1, text: "Tijuana", correct: false },
-        { testId: 2, text: "Mexico City", correct: true },
-        { testId: 3, text: "Oaxaca", correct: false },
+        { testId: 0, text: "45", correct: false },
+        { testId: 1, text: "80", correct: false },
+        { testId: 2, text: "20 City", correct: false },
+        { testId: 3, text: "100", correct: true },
       ]
     },
     {
-      prompt: "What is the name of the largest ocean in the world?",
+      prompt: "What sport is best known as the 'king of sports'?",
       choices: [
-        { testId: 0, text: "Arctic", correct: false },
-        { testId: 1, text: "Pacific", correct: true },
-        { testId: 2, text: "Atlantic", correct: true },
-        { testId: 3, text: "Antarctic", correct: false },
+        { testId: 0, text: "Hockey", correct: false },
+        { testId: 1, text: "Soccer (Football)", correct: true },
+        { testId: 2, text: "American Football", correct: false },
+        { testId: 3, text: "Golf", correct: false },
       ]
     }
   ];
