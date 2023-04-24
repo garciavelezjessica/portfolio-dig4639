@@ -80,7 +80,7 @@ export default function TriviaTwo() {
        <h1>Math Quiz</h1>
        <div>
         <h1 style={styles.center}>{mathQuestions[current].prompt}</h1>
-        <Input>Type here</Input>
+        <p>Type here</p>
        </div>
        
     </div>
